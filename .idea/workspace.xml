@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e3741019-5aca-4610-81d7-1ecd56f33f05" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectId" id="1qnUSd6cgIIpFt2BgPgeN3QcKc5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\OneDrive\Documentos\D\Hostgator\abctechnology\public" />
+      <recent name="D:\OneDrive\Documentos\D\Hostgator\abctechnology" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e3741019-5aca-4610-81d7-1ecd56f33f05" name="Default Changelist" comment="" />
+      <created>1617714849281</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617714849281</updated>
+      <workItem from="1617714850420" duration="1286000" />
+      <workItem from="1617719363307" duration="6477000" />
+      <workItem from="1619107123632" duration="10570000" />
+      <workItem from="1619129052811" duration="4626000" />
+      <workItem from="1619136453813" duration="57000" />
+      <workItem from="1619136662273" duration="2877000" />
+      <workItem from="1619177857459" duration="4365000" />
+      <workItem from="1619467859662" duration="477000" />
+      <workItem from="1625508028748" duration="53000" />
+      <workItem from="1625508103356" duration="165000" />
+      <workItem from="1625508312293" duration="89000" />
+      <workItem from="1625508422809" duration="503000" />
+      <workItem from="1625508951395" duration="204000" />
+      <workItem from="1625509176156" duration="579000" />
+      <workItem from="1625509805178" duration="516000" />
+      <workItem from="1625510347250" duration="318000" />
+      <workItem from="1625510794330" duration="63000" />
+      <workItem from="1625510877579" duration="457000" />
+      <workItem from="1625511363848" duration="569000" />
+      <workItem from="1663066163957" duration="998000" />
+      <workItem from="1663067918585" duration="885000" />
+      <workItem from="1663068919935" duration="25000" />
+      <workItem from="1663068951405" duration="2297000" />
+      <workItem from="1663073107905" duration="8297000" />
+      <workItem from="1663088236511" duration="19225000" />
+      <workItem from="1663109806377" duration="2624000" />
+      <workItem from="1663116975421" duration="498000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

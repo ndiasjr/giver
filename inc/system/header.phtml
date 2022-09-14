@@ -1,0 +1,26 @@
+<div class="navbar-header">
+    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon icon-bar"></span>
+        <span class="icon icon-bar"></span>
+        <span class="icon icon-bar"></span>
+    </button>
+
+    <!-- lOGO TEXT HERE -->
+    <a href="/" class="navbar-brand">Giver</a>
+</div>
+
+<!-- MENU LINKS -->
+<div class="collapse navbar-collapse">
+    <ul class="nav navbar-nav navbar-nav-first">
+        <li <?php if($_SERVER[ 'REQUEST_URI' ] == '/' || $_SERVER[ 'REQUEST_URI' ] == '/upload'){?>class="active"<?php }?> ><a href="upload">Upload</a></li>
+        <li <?php if($_SERVER[ 'REQUEST_URI' ] == '/customers'){?>class="active"<?php }?>><a href="customers">Customers</a></li>
+        <li class="dropdown <?php if($_SERVER[ 'REQUEST_URI' ] == '/list?customer=last_name' || $_SERVER[ 'REQUEST_URI' ] == '/list?customer=email' || $_SERVER[ 'REQUEST_URI' ] == '/list?customer=gender'){echo "active";}?>">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">List <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="/list?customer=last_name">yes or no last name</a></li>
+                <li><a href="/list?customer=email">valid or invalid email</a></li>
+                <li><a href="/list?customer=gender">with or without gender</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>

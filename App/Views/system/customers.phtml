@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 14px">
+<head>
+
+    <title>O jeito mais eficiente de resgatar seus clientes! | Giver</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <?php App\Models\Includes::system('head');?>
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+<!-- PRE LOADER -->
+<section class="preloader">
+    <div class="spinner">
+
+        <span class="spinner-rotate"></span>
+
+    </div>
+</section>
+
+<!-- MENU -->
+<section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <?php App\Models\Includes::system('header');?>
+
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="text-center">
+            <h1>Customers</h1>
+            <br><br>
+        </div>
+        <?php
+        $customers = new \App\Models\ListPage(\App\Init::getDb());
+        $list = $customers->fecthAll();
+        if (!$customers->catch){
+            if($list){
+                ?>
+                <div class="table-responsive text-nowrap">
+                    <!--Table-->
+                    <table class="table table-striped">
+                        <!--Table head-->
+                        <thead>
+                            <tr>
+                                <th>id</th>
+                                <th>first_name</th>
+                                <th>last_name</th>
+                                <th>email</th>
+                                <th>gender</th>
+                                <th>ip_address</th>
+                                <th>company</th>
+                                <th>city</th>
+                                <th>title</th>
+                                <th>website</th>
+                            </tr>
+                        </thead>
+                        <!--Table head-->
+                        <!--Table body-->
+                        <tbody>
+                            <?php
+                            foreach ($list as $row):
+                                ?>
+                                <tr>
+                                    <th scope="row"><?php echo $row['id'];?></th>
+                                    <td><?php echo $row['first_name'];?></td>
+                                    <td><?php echo $row['last_name'];?></td>
+                                    <td><?php echo $row['email'];?></td>
+                                    <td><?php echo $row['gender'];?></td>
+                                    <td><?php echo $row['ip_address'];?></td>
+                                    <td><?php echo $row['company'];?></td>
+                                    <td><?php echo $row['city'];?></td>
+                                    <td><?php echo $row['title'];?></td>
+                                    <td><?php echo $row['website'];?></td>
+                                </tr>
+                            <?php
+                            endforeach;
+                            ?>
+                        </tbody>
+                        <!--Table body-->
+                    </table>
+                    <!--Table-->
+                </div>
+                <!--Pagination Start  -->
+                <div class="pagination-area pb-115 text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="single-wrap d-flex justify-content-center">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination justify-content-start">
+                                            <?php
+                                            $customers->pageList('customers',$customers->qtdReg,$customers->page,$customers->limit);?>
+                                            <!--<li class='page-item active"><a class="page-link" href="#">01</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">02</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">03</a></li>
+                                            <li class="page-item"><a class="page-link" href="#"><span class="ti-angle-right"></span></a></li>-->
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <?php
+            }else{
+                ?>
+                <div class="row fa-border alert-danger text-center">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        nenhum resultado encontrado
+                    </div>
+                </div>
+                <?php
+            }
+        }else{
+            ?>
+            <div class="row fa-border alert-danger text-center">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <?php echo $customers->catch;?>
+                </div>
+            </div>
+            <?php
+        }
+        ?>
+    </div>
+</section>
+
+<!-- SCRIPTS -->
+<?php App\Models\Includes::system('scripts');?>
+
+</body>
+</html>
