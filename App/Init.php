@@ -31,9 +31,9 @@ class Init extends Bootstrap
         date_default_timezone_set("America/Sao_Paulo");
         set_time_limit(90);
         $host = 'localhost';
-        $dbname = 'saee_giver';
-        $username = 'saee_giver';
-        $passwd = 'giver_customers';
+        $dbname = 'giver';
+        $username = 'admin';
+        $passwd = 'root';
 
         try {
             $db = null;
